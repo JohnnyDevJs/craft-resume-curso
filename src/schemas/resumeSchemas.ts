@@ -137,13 +137,13 @@ export const resumeContentSchema = z.object({
   image: resumeImageSchema.partial(),
   infos: resumeInfosSchema.partial(),
   summary: z.string().optional(),
-  socialMedias: ResumeSocialMediaSchema.partial(),
-  experiences: ResumeExperienceSchema.partial(),
-  educations: ResumeEducationSchema.partial(),
-  skills: ResumeSkillSchema.partial(),
-  languages: ResumeLanguageSchema.partial(),
-  certifications: ResumeCertificationSchema.partial(),
-  projects: ResumeProjectSchema.partial(),
+  socialMedias: z.array(ResumeSocialMediaSchema.partial()),
+  experiences: z.array(ResumeExperienceSchema.partial()),
+  educations: z.array(ResumeEducationSchema.partial()),
+  skills: z.array(ResumeSkillSchema.partial()),
+  languages: z.array(ResumeLanguageSchema.partial()),
+  certifications: z.array(ResumeCertificationSchema.partial()),
+  projects: z.array(ResumeProjectSchema.partial()),
 })
 
 export const resumeSchema = z.object({

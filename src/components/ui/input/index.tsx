@@ -2,7 +2,7 @@ import * as React from 'react'
 
 import { cn } from '@/lib/utils'
 
-import { useFormField } from './form'
+import { useFormField } from '../form'
 
 const Input = React.forwardRef<
   HTMLInputElement,

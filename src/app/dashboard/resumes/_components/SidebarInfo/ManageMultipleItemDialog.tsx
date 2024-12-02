@@ -19,7 +19,7 @@ type FormConfig<T> = {
 }
 
 export type FormConfigObject = {
-  [K in ResumeArrayKeys]: FormConfig<ResumeSchema['content'][K]>[]
+  [K in ResumeArrayKeys]: FormConfig<ResumeSchema['content'][K][number]>[]
 }
 
 const formConfig: FormConfigObject = {
