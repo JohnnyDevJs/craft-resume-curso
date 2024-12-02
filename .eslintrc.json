@@ -1,0 +1,10 @@
+{
+  "extends": ["next/core-web-vitals", "next/typescript", "./eslint-config/next"],
+  "plugins": [
+    "simple-import-sort"
+  ],
+  "rules": {
+    "simple-import-sort/imports": "error",
+    "camelcase": "off"
+  }
+}
